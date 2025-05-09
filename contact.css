@@ -1,0 +1,661 @@
+body{
+    font-family: poppins;
+}
+.navbar {
+  background-color: rgba(0, 0, 0, 0.623) !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  padding: 1.5rem;
+  transition: top 0.3s ease-in-out;
+}
+
+.collapse{
+    justify-content: end;
+}
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+  color: #cac7c7;
+  transform: scale(120%);
+}
+.navbar-toggler{
+  background-color: white;
+ 
+}
+
+
+.hero-section {
+    background-image: url('https://www.beaches.com/wp-content/uploads/2022/03/Turks-Caicos-Aerial-View.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+    }
+
+   
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    background-image: url(https://cdn.sandals.com/libs/ui/brands/assets/uploads/btc_tb_banner_5_cf25bc9091.jpg);
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+   
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #FFD700;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cta-button:hover {
+    background-color: #FFC000;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .cta-button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+}
+
+
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2rem; /* Default size */
+  text-align: center;
+  padding: 0 10px;
+}
+
+/* Mobile devices */
+@media (max-width: 600px) {
+  .contact {
+      font-size: 1.5rem;
+      margin-top: 30px;
+      margin-bottom: 30px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .contact {
+      font-size: 1.8rem;
+  }
+}
+
+.contact:hover {
+  color: rgba(218, 165, 32, 0.705);
+  text-decoration: underline;
+}
+
+
+
+
+
+/* ----------- Responsive Design Only For Tablets & Mobiles ----------- */
+@media (max-width: 1024px) {
+  #body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #one, #two {
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .gap, .gaps {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #buttonone {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  iframe {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #map {
+    width: 100%;
+  }
+
+  .heading, .subheading {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  h3 {
+    font-size: 26px;
+  }
+
+  .gap, .gaps {
+    font-size: 14px;
+  }
+
+  #buttonone {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  #fix {
+    height: auto;
+    padding: 30px 10px;
+  }
+
+  #overlay {
+    padding: 15px;
+  }
+}
+
+
+
+#body{ width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 40px;
+flex-wrap: wrap;}
+
+
+#form{ text-align: center;
+}
+ 
+
+#one{ width: 50%;
+    height: 500px;
+background-color: rgb(243, 239, 239);
+justify-content: space-evenly;
+border-radius: 10px;
+}
+#get{
+  padding-top: 30px;
+}
+#two{ width: 50%;
+    height: 500px;
+background-color: rgb(243, 239, 239);}
+
+.gap{ margin: 10px;
+    width: 400px;
+    padding: 10px;}
+    
+    .gap:hover{border-color: goldenrod;
+        border-radius: 6px;}
+    
+    .gaps{ width: 400px;
+    height: 55px;
+    padding: 14px;
+    margin-top: 7px;}
+    
+    .gaps:hover{border-color: goldenrod;
+    border-radius: 6px;}
+    
+    h3{ text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;}
+    
+    h3:hover{ 
+    text-decoration: underline;}
+    
+    #buttonone{margin-top: 40px;
+        height: 45px;
+        width: 100px;
+    }
+    
+    #buttonone:hover{background-color:black;
+        color: white;
+        border: solid;
+        border-top: none;
+        border-left: none;
+        border-color:white;
+        box-shadow:#000000 4px 3px 1px; }
+    
+    #b{ display: flex;
+        justify-content: start;
+        border-radius: 2px;
+    }
+    
+    #button{ height: 50px;
+    background-color: white;
+    border-radius: 2px;
+    margin-left: -150px;
+    font-weight: 550;
+  margin-top: 50px;}
+    
+    #button:hover{ background-color:black;
+    color: white;
+    border: solid;
+    border-top: none;
+    border-left: none;
+    border-color:white;
+    box-shadow:#000000 4px 3px 1px;
+    }
+    
+    #sui{ width: 100%;
+        margin-top: 40px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-wrap: wrap;
+    }
+    
+    #map{width: 50%;
+    height: 400px;
+    margin-top: 100px;
+    }
+    
+    iframe{ width: 80%;
+    height: 400px;
+    margin-left: -88px;}
+    
+    #end{
+    margin-top: 70px;
+    }
+    
+    
+    
+    .heading
+    {font-size: 20px; 
+      font-weight: bold;
+    margin-left: -150px;
+  padding-top: 10px;}
+    
+    .heading:hover{ 
+      text-decoration: underline;
+    }
+    
+    .subheading{ color: #7a7a7a;
+    font-size: 16px;
+    margin-left: -150px;
+    font-weight: 200;
+  padding-top:10px ;}
+    
+
+    #fix{
+        width: 100%;
+       
+         background-image: url(https://cdn.sandals.com/libs/ui/brands/assets/uploads/btc_tb_banner_5_cf25bc9091.jpg);
+         background-size: cover;
+         background-position: center;
+         background-attachment: fixed;
+         height: 100vh;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         position: relative;
+            }
+
+            #overlay{
+                background-color: rgba(0, 0, 0, 0.6); /* dark overlay */
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+
+
+
+  .new_footer_area {
+    background: #fbfbfd !important;
+   margin-top: 600px;
+  }
+  
+  
+  .new_footer_top {
+    padding: px 0px px;
+    position: relative;
+      overflow-x: hidden;
+  }
+  .new_footer_area .footer_bottom {
+    padding-top: 5px;
+    padding-bottom: 50px;
+  }
+  .footer_bottom {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #7f88a6;
+    padding: 27px 0px;
+  }
+  .new_footer_top .company_widget p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #6a7695;
+    margin-bottom: 20px;
+  }
+  .new_footer_top .company_widget .f_subscribe_two .btn_get {
+    border-width: 1px;
+    margin-top: 20px;
+  }
+  .btn_get_two:hover {
+    background: transparent;
+    color: #5e2ced;
+  }
+  .btn_get:hover {
+    color: #fff;
+    background: #6754e2;
+    border-color: #6754e2;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
+    text-decoration: none;
+    outline: none;
+  }
+  
+  
+  
+  .new_footer_top .f_widget.about-widget .f_list li a:hover {
+    color: #5e2ced;
+  }
+  .new_footer_top .f_widget.about-widget .f_list li {
+    margin-bottom: 11px;
+  }
+  .f_widget.about-widget .f_list li:last-child {
+    margin-bottom: 0px;
+  }
+  .f_widget.about-widget .f_list li {
+    margin-bottom: 15px;
+  }
+  .f_widget.about-widget .f_list {
+    margin-bottom: 0px;
+  }
+  .new_footer_top .f_social_icon a {
+    width: 44px;
+    height: 44px;
+    line-height: 43px;
+    background: transparent;
+    border: 1px solid #e2e2eb;
+    font-size: 24px;
+  }
+  .f_social_icon a {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    font-size: 14px;
+    line-height: 45px;
+    color: #858da8;
+    display: inline-block;
+    background: #ebeef5;
+    text-align: center;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  .ti-facebook:before {
+    content: "\e741";
+  }
+  .ti-twitter-alt:before {
+    content: "\e74b";
+  }
+  .ti-vimeo-alt:before {
+    content: "\e74a";
+  }
+  .ti-pinterest:before {
+    content: "\e731";
+  }
+  
+  .btn_get_two {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #5e2ced;
+    border-color: #5e2ced;
+    color: #fff;
+  }
+  
+  .btn_get_two:hover {
+    background: transparent;
+    color: #5e2ced;
+  }
+  
+  .new_footer_top .f_social_icon a:hover {
+    background: #5e2ced;
+    border-color: #5e2ced;
+  color:white;
+  }
+  .new_footer_top .f_social_icon a + a {
+    margin-left: 4px;
+  }
+  .new_footer_top .f-title {
+    margin-bottom: 30px;
+    color: #263b5e;
+  }
+  
+  .f_600 {
+    font-weight: 600;
+  }
+  .f_size_18 {
+    font-size: 18px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: #4b505e;
+  }
+  .new_footer_top .f_widget.about-widget .f_list li a {
+    color: #6a7695;
+  }
+  
+  
+  .new_footer_top .footer_bg {
+    position: absolute;
+    bottom: 0;
+    background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigB8iI5tb8WSVBuVUGc9UjjB8O0708X7Fdic_4O1LT4CmLHoiwhanLXiRhe82yw0R7LgACQ2IhZaTY0hhmGi0gYp_Ynb49CVzfmXtYHUVKgXXpWvJ_oYT8cB4vzsnJLe3iCwuzj-w6PeYq_JaHmy_CoGoa6nw0FBo-2xLdOPvsLTh_fmYH2xhkaZ-OGQ/s16000/footer_bg.png") no-repeat scroll center 0;
+    width: 100%;
+    height: 266px;
+  }
+  
+  .new_footer_top .footer_bg .footer_bg_one {
+    background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia0PYPxwT5ifToyP3SNZeQWfJEWrUENYA5IXM6sN5vLwAKvaJS1pQVu8mOFFUa_ET4JuHNTFAxKURFerJYHDUWXLXl1vDofYXuij45JZelYOjEFoCOn7E6Vxu0fwV7ACPzArcno1rYuVxGB7JY6G7__e4_KZW4lTYIaHSLVaVLzklZBLZnQw047oq5-Q/s16000/volks.gif") no-repeat center center;
+    width: 330px;
+    height: 105px;
+  background-size:100%;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    -webkit-animation: myfirst 22s linear infinite;
+    animation: myfirst 22s linear infinite;
+  }
+  
+  .new_footer_top .footer_bg .footer_bg_two {
+    background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyLGwEUVwPK6Vi8xXMymsc-ZXVwLWyXhogZxbcXQYSY55REw_0D4VTQnsVzCrL7nsyjd0P7RVOI5NKJbQ75koZIalD8mqbMquP20fL3DxsWngKkOLOzoOf9sMuxlbyfkIBTsDw5WFUj-YJiI50yzgVjF8cZPHhEjkOP_PRTQXDHEq8AyWpBiJdN9SfQA/s16000/cyclist.gif") no-repeat center center;
+    width: 88px;
+    height: 100px;
+  background-size:100%;
+    bottom: 0;
+    left: 38%;
+    position: absolute;
+    -webkit-animation: myfirst 30s linear infinite;
+    animation: myfirst 30s linear infinite;
+  }
+  
+  
+  
+  @-moz-keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+  }
+  
+  @-webkit-keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+  }
+  
+  @keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+  }
+
+
+
+  @media (max-width: 992px) {
+    .new_footer_top .f_widget {
+      padding-left: 0 !important;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .new_footer_top .f_widget h3 {
+      font-size: 16px;
+    }
+    .new_footer_top .company_widget p,
+    .new_footer_top .f_widget .f_list li a {
+      font-size: 14px;
+      line-height: 24px;
+    }
+    .new_footer_top .f_social_icon {
+      justify-content: center;
+      margin-top: 15px;
+    }
+    .new_footer_top .f_social_icon a {
+      margin: 0 6px;
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+      font-size: 18px;
+    }
+    .new_footer_top .footer_bg .footer_bg_one {
+      width: 200px;
+      height: auto;
+      left: 10%;
+    }
+    .new_footer_top .footer_bg .footer_bg_two {
+      width: 50px;
+      height: auto;
+      left: 20%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .new_footer_top {
+      padding: 50px 15px 20px;
+    }
+    .new_footer_top .container .row {
+      display: block;
+    }
+    .new_footer_top .f_widget {
+      margin-bottom: 40px;
+    }
+    .new_footer_top .company_widget form {
+      flex-direction: column;
+      align-items: center;
+    }
+    .new_footer_top .company_widget input {
+      width: 90%;
+      margin-bottom: 10px;
+    }
+    .new_footer_top .btn_get {
+      width: 90%;
+    }
+    .new_footer_top .f-title {
+      font-size: 16px;
+    }
+    .new_footer_top .f_widget .f_list li {
+      margin-bottom: 10px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
