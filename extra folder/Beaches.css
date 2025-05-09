@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+body {
+  background: linear-gradient(to right, #1f475c, #06263a);    
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.623) !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  padding: 1.5rem;
+  transition: top 0.3s ease-in-out;
+}
+
+.collapse {
+  justify-content: end;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.nav-link:hover {
+  color: rgb(236, 240, 30);
+  transform: scale(120%);
+}
+
+.navbar-toggler {
+  background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, span, div, li, ul, ol {
+  color: white;
+}
+
+.media-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.beach-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.beach-image:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+@property --color-1 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(102, 74%, 47%);
+}
+
+@property --color-2 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: hsl(192, 98%, 43%);
+}
+
+@keyframes gradient-change {
+  to {
+    --color-1: hsl(210, 74%, 48%);
+    --color-2: hsl(267, 87%, 48%);
+  }
+}
+
+article {
+  animation: gradient-change 2s linear infinite alternate;
+  background: linear-gradient(
+    to right in oklch,
+    var(--color-1),
+    var(--color-2)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+@layer demo.support {
+  h1 {
+    font-family: KaushanScript;
+    font-size: 10vmin;
+    line-height: 1.1;
+  }
+
+  body {
+    min-block-size: 100%;
+    box-sizing: border-box;
+    display: grid;
+    place-content: center;
+    font-family: system-ui, sans-serif;
+    padding: 5vmin;
+  }
+
+  h1, p {
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  h1 {
+    line-height: 1.25cap;
+  }
+
+  p {
+    font-family: "Dank Mono", ui-monospace, monospace;
+  }
+
+  html {
+    block-size: 100%;
+  }
+
+  article {
+    display: grid;
+    gap: 1lh;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 50px !important;
+  }
+}
+
+.beach-card {
+  margin: 50px 0px;
+  padding-bottom: 35px;
+}
+
+.beach-content {
+  padding: 20px;
+}
+
+.beach-content h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.beach-content h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.beach-content p {
+  font-size: 19px;
+  line-height: 1.6;
+  color: white;
+}
+
+.footer {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer a {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #f39c12;
+}
+
+.footer p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .media-container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .media-container {
+    max-width: 720px;
+  }
+}
+@media (max-width: 768px) {
+  .media-container {
+    max-width: 90%;
+  }
+
+  .main-heading {
+    font-size: 2rem;
+  }
+
+  .beach-card {
+    margin: 20px 0;
+  }
+
+  .beach-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .beach-content p {
+    font-size: 0.9rem;
+  }
+
+  .beach-content h6 {
+    font-size: 0.85rem;
+  }
+}
